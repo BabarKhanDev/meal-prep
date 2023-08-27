@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="static/new_recipe/style.css">
+    <script src="/static/new_recipe/serve.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Include jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <title>New Recipe</title>
+</head>
+<body onload="addIngredientInput()">
+
+    <div id = "formMenu">
+        <div class="ingredientInput" id="recipeName">
+            <label for="name">Recipe Name:</label><br>
+            <input type="text" id="name" name="name" value="">
+        </div>
+
+    </div>
+
+    <div id = "formButtons">
+        <button id="newIngredientButton" onclick="addIngredientInput()"> Add New Ingredient</button>
+        <button id="submitRecipe" onclick="submitRecipe()"> Submit </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+body * {
+    font-size:1em;
+}
+
+.ingredient {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 0.5em;
+}
+
+.ingredient, #recipeName {
+    margin-bottom: 0.5em;
+}
+
+.ingredientInput {
+    margin-right:0.5em;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    font-weight: 600;
+}
+.ingredientInput input, select {
+    padding: 0.4em;
+}

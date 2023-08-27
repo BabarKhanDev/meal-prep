@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+</head>
+<body>
+<pre id="plaintext"></pre>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const encodedContent = urlParams.get('content');
+
+    // Decode and display the plaintext content with preserved new lines
+    const decodedContent = decodeURIComponent(encodedContent);
+    document.getElementById('plaintext').textContent = decodedContent;
+</script>
+</body>
+</html>
